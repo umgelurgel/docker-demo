@@ -25,4 +25,4 @@ def hello_world():
     db.session.add(request)
     db.session.commit()
     
-    return f'Hello, Docker! Your request ID is {request.id}\n'
+    return f'Hello, World! Your request ID is {request.id}\n'
