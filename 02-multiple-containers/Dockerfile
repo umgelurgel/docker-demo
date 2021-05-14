@@ -7,7 +7,7 @@ CMD ["flask", "run", "--host=0.0.0.0"]
 
 RUN apk update \
   && apk add --virtual build-deps gcc python3-dev musl-dev \
-  && apk add postgresql-dev
+  && apk add postgresql-dev build-base
 
 COPY ./api /api
 RUN pip3 install -r /api/requirements.txt
